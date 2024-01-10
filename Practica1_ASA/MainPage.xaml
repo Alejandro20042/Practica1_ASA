@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica1_ASA.MainPage">
+    <RefreshView x:Name="Refri">
+        
+    <ScrollView>
+    <StackLayout>
+    
+        <BoxView Color="Accent"
+         WidthRequest="150"
+         HeightRequest="150"
+         HorizontalOptions="Center" />
+
+        <Ellipse Fill="Red"
+         WidthRequest="150"
+         HeightRequest="50"
+         HorizontalOptions="Center" />
+
+        <Image Source="https://aka.ms/campus.jpg"
+       Aspect="AspectFit"
+       HorizontalOptions="Center" />
+
+        <Label Text="Hello, Xamarin.Forms!"
+       FontSize="Large"
+       FontAttributes="Bold"
+       HorizontalTextAlignment="Center" />
+
+        <Line X1="40"
+      Y1="0"
+      X2="0"
+      Y2="120"
+      Stroke="Red"
+      HorizontalOptions="Center" />
+
+        <Path Stroke="Black"
+      Aspect="Uniform"
+      HorizontalOptions="Center"
+      HeightRequest="100"
+      WidthRequest="100"
+      Data="M13.9,16.2
+            L32,16.2 32,31.9 13.9,30.1Z
+            M0,16.2
+            L11.9,16.2 11.9,29.9 0,28.6Z
+            M11.9,2
+            L11.9,14.2 0,14.2 0,3.3Z
+            M32,0
+            L32,14.2 13.9,14.2 13.9,1.8Z" />
+
+        <Polygon Points="0 48, 0 144, 96 150, 100 0, 192 0, 192 96,
+                 50 96, 48 192, 150 200 144 48"
+         Fill="Blue"
+         Stroke="Red"
+         StrokeThickness="3"
+         HorizontalOptions="Center" />
+
+            <Polyline Points="0,0 10,30, 15,0 18,60 23,30 35,30 40,0
+                  43,60 48,30 100,30"
+          Stroke="Red"
+          HorizontalOptions="Center" />
+
+            <Rectangle Fill="Red"
+           WidthRequest="150"
+           HeightRequest="50"
+           HorizontalOptions="Center" />
+
+            <WebView Source="https://learn.microsoft.com/xamarin/"
+         VerticalOptions="FillAndExpand" />
+
+            <RadioButton Content="Piña" /><RadioButton Content="Piña" /><RadioButton Content="Piña" />
+
+
+                <Button Text="Refresh" Clicked="Button_Clicked">
+                    
+                </Button>
+
+                <SearchBar Placeholder="Enter search term" />
+
+                <CheckBox IsChecked="true"
+          HorizontalOptions="Center"
+          VerticalOptions="CenterAndExpand" />
+
+                <Slider Minimum="0"
+        Maximum="100"
+        VerticalOptions="CenterAndExpand" />
+
+                <Stepper Minimum="0"
+         Maximum="10"
+         Increment="0.1"
+         HorizontalOptions="Center"
+         VerticalOptions="CenterAndExpand" />
+
+                <Switch IsToggled="false"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand" />
+
+                <DatePicker Format="D"
+            VerticalOptions="CenterAndExpand"  />
+
+                <TimePicker Format="T"
+            VerticalOptions="CenterAndExpand" />
+
+                <Editor VerticalOptions="FillAndExpand" />
+
+                <ActivityIndicator IsRunning="True"
+                   VerticalOptions="CenterAndExpand" />
+
+                <ProgressBar Progress=".5"
+              />
+
+            </StackLayout>
+    </ScrollView>
+    </RefreshView>
+</ContentPage>
